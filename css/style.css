@@ -79,7 +79,6 @@ img {
   width: 1160px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 10px;
 }
 
 .link:not([href]),
@@ -161,11 +160,12 @@ img {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 600px;
+  flex-grow: 1;
+  justify-content: flex-end;
+  max-width: 660px;
   margin: 0;
-  margin-left: 202px;
   margin-top: 75px;
-  padding: 0;
+  padding: 0 20px;
   list-style: none;
 }
 
@@ -185,6 +185,7 @@ img {
 .basket-link{
   margin-top: 75px;
   margin-left: auto;
+  padding-left: 10px;
 }
 
 .basket-link::before {
