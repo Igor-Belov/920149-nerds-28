@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -152,7 +152,7 @@
         <h2 class="title sort-title">Сортировать:</h2>
         <ul class="sort-list">
           <li class="sort-item">
-            <button class="sort-button">По цене</button>
+            <button class="sort-button active">По цене</button>
           </li>
           <li class="sort-item">
             <button class="sort-button">По типу</button>
@@ -161,7 +161,7 @@
             <button class="sort-button">По названию</button>
           </li>
           <li class="sort-item">
-            <button class="sort-button sort-button-image" aria-label="По уменьшению">
+            <button class="sort-button sort-button-image active" aria-label="По уменьшению">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" fill="#A6A6A6" />
               </svg>
@@ -193,7 +193,7 @@
                 </a>
                 <p class="card-product-text">Информационный сайт для&nbsp;туристов</p>
                 <a class="link button-link second-layer-link-price" href="#">
-                  <span class="second-layer-price">9900</span>
+                  <span class="second-layer-price">9 900</span>
                 </a>
                 <div class="card-product-image">
                   <img src="img/card1.jpg" width="358" height="578" alt="Сайт фирмы Седона">
@@ -215,7 +215,7 @@
                 </a>
                 <p class="card-product-text">Продуктовый лендинг приложения для&nbsp;iOS и&nbsp;Android</p>
                 <a class="link button-link second-layer-link-price" href="#">
-                  <span class="second-layer-price">9900</span>
+                  <span class="second-layer-price">9 900</span>
                 </a>
                 <div class="card-product-image">
                   <img src="img/card2.jpg" width="358" height="578" alt="Сайт фирмы Пинк Ап">
@@ -237,7 +237,7 @@
                 </a>
                 <p class="card-product-text">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
                 <a class="link button-link second-layer-link-price" href="#">
-                  <span class="second-layer-price">9900</span>
+                  <span class="second-layer-price">9 900</span>
                 </a>
                 <div class="card-product-image">
                   <img src="img/card3.jpg" width="358" height="578" alt="Сайт фирмы барбершоп Бородинский">
@@ -259,7 +259,7 @@
                 </a>
                 <p class="card-product-text">Интернет-магазин<br> вязаных игрушек</p>
                 <a class="link button-link second-layer-link-price" href="#">
-                  <span class="second-layer-price">9900</span>
+                  <span class="second-layer-price">9 900</span>
                 </a>
                 <div class="card-product-image">
                   <img src="img/card4.jpg" width="358" height="578" alt="Сайт фирмы Мишка">
@@ -281,7 +281,7 @@
                 </a>
                 <p class="card-product-text">Лендинг курсов повышения квалификации</p>
                 <a class="link button-link second-layer-link-price" href="#">
-                  <span class="second-layer-price">9900</span>
+                  <span class="second-layer-price">9 900</span>
                 </a>
                 <div class="card-product-image">
                   <img src="img/card5.jpg" width="358" height="578" alt="Сайт фирмы А плюс">
@@ -303,7 +303,7 @@
                 </a>
                 <p class="card-product-text">Промо-сайт производителя крафтового кваса</p>
                 <a class="link button-link second-layer-link-price" href="#">
-                  <span class="second-layer-price">9900</span>
+                  <span class="second-layer-price">9 900</span>
                 </a>
                 <div class="card-product-image">
                   <img src="img/card6.jpg" width="358" height="578" alt="Сайт фирмы Кваст">
@@ -376,7 +376,7 @@
     </section>
   </footer>
 
-  <section class="write-us visually-hidden">
+  <section class="write-us popup-off">
     <h2 class="title write-us-title">Напишите нам</h2>
     <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
       <ul class="write-us-list">
@@ -400,6 +400,7 @@
     </form>
     <button class="button-close" type="button" aria-label="закрыть окно"></button>
   </section>
+  <script src="js/script.min.js"></script>
 
 </body>
 
