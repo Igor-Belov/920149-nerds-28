@@ -114,6 +114,7 @@ img {
   line-height: 18px;
   font-family: inherit;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   color: var(--text-color-secont, white);
   background-color: var(--background-botton-1, red);
@@ -418,46 +419,48 @@ img {
 
 .products-item {
   display: flex;
+  margin-right: 100px;
 }
 
-.products-item:not(:last-child) {
-  margin-right: 100px;
+.products-item:nth-of-type(3n) {
+  margin-right: 0;
 }
 
 .product {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 10px;
   width: 300px;
   min-height: 347px;
 }
 
-.products-item:nth-of-type(1) > .product {
-  background-color: var(--background-first, white);
+.product-image {
+  width: inherit;
+  min-height: 146px;
+  background-color: var(--background-botton-1, red);
+  background-size: 300px 146px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.products-item:nth-of-type(1) .product-image {
+  background-color: var(--background-botton-1, red);
   background-image: url("../img/illustration1.png");
-  background-size: 300px 146px;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
-.products-item:nth-of-type(2) > .product {
-  background-color: var(--background-first, white);
+.products-item:nth-of-type(2) .product-image {
+  background-color: var(--background-botton-2, green);
   background-image: url("../img/illustration2.png");
-  background-size: 300px 146px;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
-.products-item:nth-of-type(3) > .product {
-  background-color: var(--background-first, white);
+.products-item:nth-of-type(3) .product-image {
+  background-color: var(--background-botton-3, yellow);
   background-image: url("../img/illustration3.png");
-  background-size: 300px 146px;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .product-title {
-  padding-top: 171px;
+  padding-top: 25px;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -505,7 +508,7 @@ img {
 
 .about-us .wrapper {
   display: flex;
-  padding-top: 39px;
+  padding-top: 29px;
   padding-bottom: 73px;
   border-bottom: 2px solid var(--background-second, gray);
   background-color: var(--background-first, white);
@@ -1310,8 +1313,12 @@ img {
 }
 
 .sort-button:hover,
-.sort-button:active {
+.sort-button:focus {
   opacity: 0.6;
+}
+
+.sort-button:focus {
+  outline: 1px solid black;
 }
 
 .sort-button:active,
@@ -1329,7 +1336,7 @@ img {
 }
 
 .sort-button-image:active path,
-.sort-button-image:disabled path {
+.sort-button-image.active path {
   fill: var(--botton-sort-active, black);
 }
 
@@ -1384,6 +1391,7 @@ img {
   margin-right: 5px;
   width: 14px;
   height: 14px;
+  vertical-align: middle;
   background-color: var(--background-first, white);
   border-radius: 50%;
 }
